@@ -5,8 +5,8 @@ public class Main {
         System.out.println("Welcome, the new SkiRentalStore is now open!");
         if(store.tryToRent()){
             Storage storage = store.getNextAvailableStorage();
-            Ticket rentTicket = storage.startRent();
-            storage.endRent();
+            Ticket rentTicket = storage.startRental();
+            storage.endRental();
         }else{
             System.out.println("Sorry, no more storage left to rent.");
         }

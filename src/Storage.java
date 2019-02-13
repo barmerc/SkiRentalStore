@@ -30,7 +30,7 @@ public class Storage {
         this.isRented = rentalState;
     }
 
-    public Ticket startRent(){
+    public Ticket startRental(){
         System.out.println("Please enter how many days you want to rent from the maximal 3 days?");
         int rentalTime = sc.nextInt();
         this.getPayment(rentalTime);
@@ -42,7 +42,7 @@ public class Storage {
         return this.rentalTicket;
     }
 
-    public void endRent(){
+    public void endRental(){
         System.out.println("Please give your ticket number!");
         int rentalTicketNumber;
         rentalTicketNumber = sc.nextInt();
