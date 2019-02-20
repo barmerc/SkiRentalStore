@@ -5,23 +5,23 @@ public class Ticket {
     private int rentalTicketNumber;
     private LocalDateTime startDateOfRental;
 
-    public Ticket(int rentalTicketNumber, LocalDateTime startDateOfRental){
+    public Ticket(int rentalTicketNumber, LocalDateTime startDateOfRental) {
         this.rentalTicketNumber = rentalTicketNumber;
         this.startDateOfRental = startDateOfRental;
     }
 
-    public String getFormattedStartDateOfRental(){
+    public String getFormattedStartDateOfRental() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM. dd. HH:mm");
-        String formattedStartDateOfRental = this.startDateOfRental.format(formatter);
+        String formattedStartDateOfRental = startDateOfRental.format(formatter);
         return formattedStartDateOfRental;
     }
 
-    public int getRentalTicketNumber(){
-        return this.rentalTicketNumber;
+    public int getRentalTicketNumber() {
+        return rentalTicketNumber;
     }
 
-    public LocalDateTime getStartDateOfRental(){
-        return this.startDateOfRental;
+    public LocalDateTime getStartDateOfRental() {
+        return startDateOfRental;
     }
 
 }
